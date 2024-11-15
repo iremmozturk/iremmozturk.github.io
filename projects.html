@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Sol mavi tarafım-->
+    <div class="sidebar">
+        <div class="profile-container">
+            <img src="/img/profile.jpg" alt="irem_öztürk" class="profile-img">
+            <p class="name">İrem Öztürk</p>
+        </div>
+    </div>
+    <!--Menü kısmım-->
+    <nav>
+        <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="about.html">Hakkımda</a></li>
+        <li><a href="projects.html">Projeler</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <!-- Filtreleme-->
+    <div id="filter-container">
+        <label for="filter">Proje Sıralama:</label>
+        <select id="filter" onchange="filterProjects()">
+            <option value="newest">En Son Projeler</option>
+            <option value="popular">En Beğenilen Projeler</option>
+        </select>
+    </div>
+    <!--Projeler kısmım-->
+
+        <h1>Projelerim</h1>
+        <div id="projects-container">
+            <div class="project-box" data-type="newest">
+                <img src="img\tubitak_1.jpg">
+                <h3>TÜBİTAK 2209-A - OTS</h3>
+                <p>Projemizin amacı, ormanların güvenliğini ve sürdürülebilirliğini artırmaktır. Sesli ve görüntülü izleme sistemleri kullanarak, yasa dışı ağaç kesimi, yangın gibi tehditleri erken aşamada tespit etmeyi ve hızlı müdahale sağlamayı hedefliyoruz.</p>
+                <p> Sensörler, yapay zeka ile analiz edilerek tehditleri daha iyi tanımlayacak ve ormanların korunmasına katkıda bulunacaktır.</p>
+                <p>Enerji ihtiyacı güneş enerjisi ile karşılanacak, böylece çevresel etkiler en aza indirilecektir. Bu proje, ormanların sağlıklı ve güvenli kalmasını sağlayarak doğal dengeyi korumaya yardımcı olacaktır.</p>
+            </div>
+        </div>
+        <div id="projects-container">
+            <div class="project-box" data-type= "popular">
+                <img src="img\teknofest_1.jpg">
+                <h3>TÜBİTAK 2209-A - OTS</h3>
+                <p>Projemizin amacı, engelli bireylerin iletişim problemlerini çözmek için gerekli yazılımları bir telefon uygulaması içinde toplamaktır. Bu uygulama, işitme ve görme engelli bireyler için gerçek zamanlı işaret dili tanıma ve yazılı metne dönüştürme, yazılı metni sesli metne çevirme, çift yönlü iletişim sağlama ve kullanıcı dostu arayüz sunma özelliklerine sahip olacaktır.</p> 
+                <p>Android ve iOS platformlarında ücretsiz olarak indirilebilecek olan uygulama, dünya genelinde ve Türkiye'de geniş bir akıllı telefon kitlesine ulaşmayı hedeflemektedir.</p> 
+                <p>Amacımız, sosyal medya ve akıllı telefon kullanımını engelli vatandaşlarımızın hayatına katkı sağlayacak şekilde yönlendirerek, iletişimde onlara yardımcı olmak ve onları topluma en kolay yollarla entegre etmektir.</p> 
+                
+            </div>
+        </div>
+
+    
+</body>
+</html>

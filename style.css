@@ -1,0 +1,386 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.baslik {
+    text-align: center; 
+    margin-top: 250px; 
+    font-size: 3em; 
+    color: #75c3ff; 
+    margin-left: 400px; 
+}
+
+.alt-metin {
+    text-align: center; 
+    font-size: 1.5em; 
+    color: #5595d9; 
+    margin-left: 775px;
+    margin-top: 350px; 
+}
+form {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #457cb8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/***************** Menü kısmı *********************/
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center; 
+    background-color: #457cb8;
+    margin: 0px;  
+    margin-top: 50px; 
+    justify-content: center;
+    
+}
+
+nav ul li {
+    display: inline; 
+    margin: 60px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #e7e7e7;
+    font-size: 1.50em; 
+    margin: 40 40px;;
+}
+
+nav ul li a:hover {
+    color: #0048ff; 
+}
+
+#clock {
+    font-size: 1.2em;
+    margin: 20px 0 0 20px;
+    color: #fff;
+}
+
+
+/* Sol Mavi Kutu */
+.sidebar {
+    width: 450px; 
+    height: 100vh; 
+    background-color: #457cb8;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.profile-img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+/* *******************İLETİŞİM KISMI ******************CSS*/
+.form-container {
+    margin-left: 320px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+/* Form stil */
+form {
+    padding: 20px;
+    background-color: #457cb8; 
+    border-radius: 10px;
+    width: 300px;           
+    color: #fff;            
+}
+
+/* Form başlık */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form elemanları*/
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+form button {
+    padding: 10px;
+    background: #0056b3;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00408f;
+}
+
+#error-message {
+    color: red;
+    display: none;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+/********************HAKKIMDA KISMI*************** CSS*/
+.about-container {
+    text-align: center;
+    padding: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profilee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profilee-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 2em;
+    color: #457cb8;
+}
+
+.social-media a {
+    color: #457cb8;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.social-media a:hover {
+    color: #0048ff;
+}
+
+/******************Projeler kısmı*******************/
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.project-box {
+    background-color: #457cb8; 
+    border: 1px solid #457cb8;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+   
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-box h3 {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-box p {
+    color: #000000;
+    font-size: 1em;
+}
+/*Filtreleme kısmı*/
+#filter-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#filter {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ****************** RESPONSIVE KURALLARI ******************* */
+
+@media (max-width: 1024px) {
+    .baslik {
+        margin-left: 0;
+        font-size: 2.5em;
+        margin-top: 150px;
+    }
+
+    .alt-metin {
+        margin-left: 0;
+        margin-top: 200px;
+        font-size: 1.2em;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .profile-container {
+        flex-direction: row;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .form-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .baslik {
+        margin-top: 100px;
+        font-size: 2em;
+    }
+
+    .alt-metin {
+        margin-top: 150px;
+        font-size: 1em;
+    }
+
+    .form-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profilee-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .baslik {
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+
+    .alt-metin {
+        font-size: 1em;
+        margin-top: 100px;
+    }
+
+    .form-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilee-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+        font-size: 1em;
+    }
+}
